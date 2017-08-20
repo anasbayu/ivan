@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import teswifi.anasbayu.com.proyekivan.R;
 import teswifi.anasbayu.com.proyekivan.moduls.Base.BaseView;
-import teswifi.anasbayu.com.proyekivan.moduls.Dashboard.DashboardActivity;
+import teswifi.anasbayu.com.proyekivan.moduls.pengumuman.PengumumanActivity;
 import teswifi.anasbayu.com.proyekivan.moduls.register.RegisterActivity;
 
 public class LoginActivity extends AppCompatActivity implements LoginView, BaseView{
@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView, BaseV
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
 
         // Pindah ke dashboard.
-        Intent iDashboard = new Intent(this, DashboardActivity.class);
+        Intent iDashboard = new Intent(this, PengumumanActivity.class);
         startActivity(iDashboard);
         finish();
     }
@@ -86,7 +86,8 @@ public class LoginActivity extends AppCompatActivity implements LoginView, BaseV
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mPresenter.login(etUname.getText().toString(), etPass.getText().toString());
+//                mPresenter.login(etUname.getText().toString(), etPass.getText().toString());
+            onDisplaySuccess("ok");
             }
         });
 

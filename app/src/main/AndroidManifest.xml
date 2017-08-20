@@ -20,7 +20,9 @@
         </activity>
         <activity android:name=".moduls.register.RegisterActivity">
         </activity>
-        <activity android:name=".moduls.Dashboard.DashboardActivity">
+        <activity android:name=".moduls.pengumuman.PengumumanActivity">
+        </activity>
+        <activity android:name=".moduls.daftar_dosen.DaftarDosenActivity">
         </activity>
     </application>
 
