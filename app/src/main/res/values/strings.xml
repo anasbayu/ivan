@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Proyek ivan</string>
+    <string name="txt_di_login">Belum memiliki akun? Daftar</string>
+    <string name="txt_di_register">Sudah memiliki akun? Masuk</string>
 </resources>

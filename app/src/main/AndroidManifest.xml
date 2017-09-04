@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="teswifi.anasbayu.com.proyekivan">
+          package="ekonsul.anasbayu.com.ekonsul">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -22,7 +22,9 @@
         </activity>
         <activity android:name=".moduls.pengumuman.PengumumanActivity">
         </activity>
-        <activity android:name=".moduls.daftar_dosen.DaftarDosenActivity">
+        <activity android:name=".moduls.daftardosen.DaftarDosenActivity">
+        </activity>
+        <activity android:name=".moduls.bookkonsultasi.BookActivity">
         </activity>
     </application>
 

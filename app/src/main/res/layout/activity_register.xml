@@ -1,52 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:padding="10dp"
-tools:context="teswifi.anasbayu.com.proyekivan.moduls.register.RegisterActivity">
-
-<ImageView
-    android:id="@+id/imageView"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:srcCompat="@mipmap/ic_launcher"
-    android:layout_marginBottom="30dp"
-    android:minHeight="100dp"/>
+    android:layout_height="match_parent"
+    tools:context="ekonsul.anasbayu.com.ekonsul.moduls.register.RegisterActivity">
 
-<EditText
-    android:id="@+id/et_uname"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:ems="10"
-    android:hint="Username"
-    tools:text="username"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-<EditText
-    android:id="@+id/et_pass"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:ems="10"
-    android:hint="Password"
-    android:inputType="textPassword"
-    tools:text="Password"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="25dp"
+            android:minHeight="100dp"
+            app:srcCompat="@mipmap/ic_launcher"/>
 
-<Button
-    android:id="@+id/btn_masuk"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="25dp"
-    android:text="Daftar"/>
+        <EditText
+            android:id="@+id/et_uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Username"
+            tools:text="username"/>
 
-<TextView
-    android:id="@+id/textView"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
-    android:text="Belum memiliki akun? Masuk disini."
-    android:textAlignment="center"
-    android:textStyle="bold|italic"/>
-</LinearLayout>
+        <EditText
+            android:id="@+id/et_no_induk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="No Induk"
+            tools:text="No Induk"/>
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            tools:text="Password"/>
+
+        <Button
+            android:id="@+id/btn_daftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_style1"
+            android:text="Daftar"
+            android:textColor="@color/colorTextBtn"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/txt_di_register"
+                android:textAlignment="textEnd"
+                />
+
+            <TextView
+                android:id="@+id/txt_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text=" disini"
+                android:textAlignment="textStart"
+                android:textStyle="bold|italic"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
