@@ -100,6 +100,6 @@ public class RegisterActivity extends AppCompatActivity implements RegisterView,
 
     @Override
     public void initPresenter() {
-        mPresenter = new RegisterPresenter();
+        mPresenter = new RegisterPresenter(this);
     }
 }

@@ -11,6 +11,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/txt_menu_profil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Profil"
+            android:textColor="@color/colorTextBtn"/>
 
         <TextView
             android:id="@+id/txt_menu_dosen"
@@ -21,11 +28,11 @@
             android:textColor="@color/colorTextBtn"/>
 
         <TextView
-            android:id="@+id/txt_menu_pengumuman"
+            android:id="@+id/txt_menu_chat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Pengumuman"
+            android:text="Pesan"
             android:textColor="@color/colorTextBtn"/>
 
         <TextView

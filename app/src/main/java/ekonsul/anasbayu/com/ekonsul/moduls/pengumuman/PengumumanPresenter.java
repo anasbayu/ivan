@@ -25,8 +25,8 @@ public class PengumumanPresenter {
 //            mView.onTidakAdaPengumuman();
 //        }
         // Ambil dr server. (dummy).
-        data.add(new Pengumuman("Ke Dosen", "Isi 1", ""));
-        data.add(new Pengumuman("Judul 2", "Isi 2", ""));
+        data.add(new Pengumuman("Judul Pengumuman 1", "Isi pengumuman 1", ""));
+        data.add(new Pengumuman("Judul Pengumuman 2", "Isi pengumumannya", ""));
 
         return data;
     }

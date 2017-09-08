@@ -8,14 +8,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.Collections;
 import java.util.List;
 
 import ekonsul.anasbayu.com.ekonsul.R;
 import ekonsul.anasbayu.com.ekonsul.model.Pengumuman;
-import ekonsul.anasbayu.com.ekonsul.moduls.daftardosen.DaftarDosenActivity;
+import ekonsul.anasbayu.com.ekonsul.moduls.pengumuman.DetailPengumuman.DetailPengumumanActivity;
 
 /**
  * Created by AnasBayu on 19/08/2017.
@@ -67,21 +66,11 @@ public class PengumumanAdapter extends RecyclerView.Adapter<PengumumanAdapter.mV
         holder.row.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent iDetail = new Intent(mConteext, DetailActivity.class);
-//                iDetail.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                iDetail.putExtra("data", data.get(position));
-//
-//                mConteext.startActivity(iDetail);
+                Intent iDetail = new Intent(mConteext, DetailPengumumanActivity.class);
+                iDetail.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                iDetail.putExtra("data", data.get(position).getJudul());
 
-                if(position == 0){
-                    Intent iDosen = new Intent(mConteext, DaftarDosenActivity.class);
-                    iDosen.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                    iDosen.putExtra("data", data.get(position));
-                    mConteext.startActivity(iDosen);
-                }else{
-                    Toast.makeText(mConteext, "Tes " + position, Toast.LENGTH_SHORT).show();
-                }
-
+                mConteext.startActivity(iDetail);
             }
         });
     }
