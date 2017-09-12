@@ -5,15 +5,15 @@ package ekonsul.anasbayu.com.ekonsul.model;
  */
 
 public class ResponseModel {
-    private String username;
-    private String password;
+    private String status;
+    private String pesan;
 
 
-    public String getUsername() {
-        return username;
+    public String getStatus() {
+        return status;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPesan() {
+        return pesan;
     }
 }

@@ -44,7 +44,7 @@ public class RegisterPresenter {
             public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
                 Log.d("LOG_RESPONSE", response.toString());
                 Log.d("LOG_RESPONSE2", response.body().toString());
-                Log.d("LOG_RESPONSE2", response.body().getUsername().toString());
+                Log.d("LOG_RESPONSE2", response.body().getStatus().toString());
 //                mView.onDisplaySuccess("Berhasil login");
             }
 

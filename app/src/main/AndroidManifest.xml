@@ -28,6 +28,8 @@
         </activity>
         <activity android:name=".moduls.pengumuman.DetailPengumuman.DetailPengumumanActivity">
         </activity>
+        <activity android:name=".moduls.profil.ProfilActivity">
+        </activity>
     </application>
 
 </manifest>

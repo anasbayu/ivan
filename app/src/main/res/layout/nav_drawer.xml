@@ -13,6 +13,7 @@
         android:padding="15dp">
 
         <LinearLayout
+            android:id="@+id/menu_profil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -26,14 +27,13 @@
                 app:srcCompat="@drawable/ic_drawer_user"/>
 
             <TextView
-                android:id="@+id/txt_menu_profil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:text="Profil"
-                android:textColor="@color/colorTextBtn"/>
+                android:textColor="@color/colorTextMenu"/>
 
         </LinearLayout>
 
@@ -44,6 +44,7 @@
             app:srcCompat="@drawable/line"/>
 
         <LinearLayout
+            android:id="@+id/menu_dosen"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
@@ -57,14 +58,13 @@
                 app:srcCompat="@drawable/ic_drawer_education"/>
 
             <TextView
-                android:id="@+id/txt_menu_dosen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:text="Konsultasi"
-                android:textColor="@color/colorTextBtn"/>
+                android:textColor="@color/colorTextMenu"/>
         </LinearLayout>
 
         <ImageView
@@ -74,6 +74,7 @@
             app:srcCompat="@drawable/line"/>
 
         <LinearLayout
+            android:id="@+id/menu_chat"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
@@ -87,14 +88,13 @@
                 app:srcCompat="@drawable/ic_drawer_comment"/>
 
             <TextView
-                android:id="@+id/txt_menu_chat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:text="Pesan"
-                android:textColor="@color/colorTextBtn"/>
+                android:textColor="@color/colorTextMenu"/>
         </LinearLayout>
 
         <ImageView
@@ -104,6 +104,7 @@
             app:srcCompat="@drawable/line"/>
 
         <LinearLayout
+            android:id="@+id/menu_keluar"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
@@ -117,14 +118,13 @@
                 app:srcCompat="@drawable/ic_drawer_settings"/>
 
             <TextView
-                android:id="@+id/txt_menu_keluar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:text="Keluar"
-                android:textColor="@color/colorTextBtn"/>
+                android:textColor="@color/colorTextMenu"/>
         </LinearLayout>
 
         <ImageView

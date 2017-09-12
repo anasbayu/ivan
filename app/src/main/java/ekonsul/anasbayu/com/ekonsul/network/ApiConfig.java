@@ -6,7 +6,7 @@ package ekonsul.anasbayu.com.ekonsul.network;
 
 public final class ApiConfig {
 
-    public static final String BASE_URL = "http://192.168.200.9/ivan/";
+    public static final String BASE_URL = "http://192.168.200.34/ivan/";
     public static final String LOGIN = "login.php";
     public static final String REGISTER = "register.php";
     public static final String GET_DOSEN = "dosen.php";

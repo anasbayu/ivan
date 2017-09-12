@@ -86,8 +86,8 @@ public class LoginActivity extends AppCompatActivity implements LoginView, BaseV
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                mPresenter.login(etUname.getText().toString(), etPass.getText().toString());
-                onDisplaySuccess("Login Berhasil");
+                mPresenter.login(etUname.getText().toString(), etPass.getText().toString());
+//                onDisplaySuccess("Login Berhasil");
             }
         });
 
